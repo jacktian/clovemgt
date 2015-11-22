@@ -4,6 +4,7 @@ var meta = require('../package.json'),
     express = require('express'),
     compress = require('compression'),
     path = require('path'),
+    exphbs  = require('express-handlebars'),
     app = module.exports = express(),
     middleware = ['combo', 'router', 'proxy', 'static', 'error'];
 
@@ -27,6 +28,7 @@ app.enable('trust proxy');
 
 app.use(compress());
 app.use('/co', middleware.combo());
+//app.use(middleware.router());
 app.use(middleware.router({index: '/' + meta.name + '/' + meta.version + '/index.html'}));
 // app.use('/api/*', middleware.proxy('http://cors-api-host'));
 app.use(middleware.static());

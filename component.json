@@ -1,5 +1,10 @@
 {
   "name": "clovemgt",
   "version": "1.0.0",
-  "dependencies": {}
+  "dependencies": {
+    "scrat-team/each": "0.1.0",
+    "scrat-team/extend": "0.1.0",
+    "scrat-team/router": "0.1.0",
+    "scrat-team/type": "0.1.0"
+  }
 }

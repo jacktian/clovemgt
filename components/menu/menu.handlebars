@@ -1,0 +1,8 @@
+<div class="ui container">
+  <a class="item header logo menu-item active" href="/">首页 </a>
+  {{#each menu}}
+    <a href="{{href}}" class="item menu-item {{active}}" data-menu="{{name}}">
+      <span class="glyphicon glyphicon-{{icon}}"></span> {{label}}
+    </a>
+  {{/each}}
+</div>

@@ -1,0 +1,10 @@
+.intro-box {
+  margin: 80px 0px 80px;
+  text-align: center;
+}
+.intro-content {
+  font: 50px "Helvetica Neue","Open Sans",sans-serif;
+  color: #666;
+  font-weight: 100;
+  margin-top: 10px;
+}

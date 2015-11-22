@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="HandheldFriendly" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" type="text/css" href="lib/normalize.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Scrat Template Project</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/semantic.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+  <title>家庭助理管理后台</title>
 </head>
+
 <body>
-  <script src="lib/scrat.js"></script>
+  <script src="lib/lib.js"></script>
   <script>
     require.config(__FRAMEWORK_CONFIG__);
-    require.async('boot', function (boot) { boot() });
+    require.async('boot', function(boot) {
+      // 渲染页面结构
+      boot.render(document.body);
+    });
   </script>
 </body>
+
 </html>

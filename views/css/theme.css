@@ -1,0 +1,62 @@
+.ui.menu.navbar {
+  border-radius: 0px;
+  height: 55px;
+}
+.logo {
+  font-size: 1.1rem;
+}
+.ui.breadcrumb {
+  padding-top: 15px;
+  font-size: 1.3rem;
+}
+.section i {
+  font-size: 1.5rem;
+}
+.toolbar {
+  overflow: hidden;
+}
+.data-num {
+  float:left;
+}
+.add-btn, .search-btn {
+  float: right;
+}
+i.tip-icon {
+  font-size: 1.1rem;
+}
+i.usable {
+  color: green;
+}
+i.unusable {
+  color: red;
+}
+span.usable {
+  font-size: 1rem;
+}
+.ui.form {
+  width: 100%;
+}
+.ui.segment.footer {
+  margin-top: 30px;
+}
+.hidden {
+  display: none;
+}
+.ui.horizontal.divider.header {
+  margin-bottom: 30px;
+}
+.ui.form.toolbar-left {
+  float: left;
+  width: 80%;
+}
+.page_wrap{
+  text-align: center;
+}
+#indexpage {
+  text-align: center;
+  padding-top: 50px;
+}
+h1.header.backup-title {
+  font-size: 3rem;
+  font-size: Microsoft Yahei;
+}
