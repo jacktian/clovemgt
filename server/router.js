@@ -9,6 +9,7 @@ var express = require('express'),
      req.url = router.options.index || '/';
      next();
  });
+
 /*
  router.get('/api/xxx', function (req, res, next) {
      request('http://localhost:8081/app/api/testserver.php?type=select&project_id=3',function(error, response, body){
@@ -16,6 +17,7 @@ var express = require('express'),
      })
  });
 */
+
 module.exports = function (options) {
     router.options = options || {};
     return router;
