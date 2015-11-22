@@ -21,6 +21,7 @@
         <th>图片链接</th>
         <th>文章链接</th>
         <th>优先级</th>
+        <th>操作</th>
       </tr>
     </thead>
     <tbody id="info-list">

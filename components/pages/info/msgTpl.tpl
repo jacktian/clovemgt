@@ -24,6 +24,9 @@
 
     {@/if}
         </td>
+        <td>
+          <div class="ui button red mini info-del-btn" data-id="${item.id}">删除</div>
+        </td>
       </tr>
 
 {@/each}
