@@ -2,15 +2,15 @@
  * @Author: boxizen
  * @Date:   2015-11-22 15:21:48
  * @Last Modified by:   boxizen
- * @Last Modified time: 2015-11-22 18:59:09
+ * @Last Modified time: 2015-11-22 21:02:31
  */
 
 'use strict';
 
 
-var addArticleApi = 'http://localhost:9001/articleaction/addarticle';
+var addArticleApi = 'http://sunyanmi.com/articleaction/addarticle';
 
-var getArticleApi = 'http://localhost:9001/articleaction/getarticle';
+var getArticleApi = 'http://sunyanmi.com/articleaction/getarticle';
 
 // 添加按钮
 $(document).on('click', '.info-add-btn', function() {
