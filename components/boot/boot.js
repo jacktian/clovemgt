@@ -58,13 +58,16 @@ exports.render = function(dom) {
             var path = path_str.split(/admin\//)[1];
 
             require.async('pages/' + path, function(page) {
+
                 $('.' + path + '-tab').removeClass('hidden');
+                
+                page.verify();
                 // 首次加载
                 if ($('.' + path + '-tab').attr('data-load') == "false") {
                     $('.' + path + '-tab').html(page.getTpl());
                     $('.' + path + '-tab').attr('data-load', 'true');
                     project_id = localStorage.project_id;
-                    page.loadMsg(project_id);
+                    page.loadMsg(project_id);                    
                 }
 
             });

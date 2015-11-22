@@ -2,7 +2,7 @@
  * @Author: boxizen
  * @Date:   2015-11-22 15:21:48
  * @Last Modified by:   boxizen
- * @Last Modified time: 2015-11-22 22:26:04
+ * @Last Modified time: 2015-11-23 00:13:24
  */
 
 'use strict';
@@ -65,6 +65,15 @@ $(document).on('click', '.info-del-btn', function() {
         }
     });
 });
+
+var verify = function() {
+    console.log("dsds");
+    if(localStorage.name && localStorage.password && localStorage.name == "root" && localStorage.password == "clove1234") ;
+    else{
+        window.location.href = "#!/admin/login";
+    }
+}
+exports.verify = verify;
 
 function loadMsg() {
 

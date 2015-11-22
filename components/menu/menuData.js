@@ -4,6 +4,12 @@ var data = {
         label: '资讯管理',
         href: '/#!/admin/info',
         active: ''
+    },{
+        name: 'login',
+        label: '登陆',
+        href: '/#!/admin/login',
+        active: '',
+        id: 'loginMenu'
     }]
 }
 
