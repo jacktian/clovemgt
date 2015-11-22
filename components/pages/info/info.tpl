@@ -7,13 +7,12 @@
   <div class="ui divider"></div>
   <div class="toolbar">
     <div class="ui data-num">
-      <i class="browser icon"></i> 资讯数量 :&nbsp;&nbsp;&nbsp;
-      <span class="ui label circular info-data-num">0</span>
+      <i class="browser icon"></i>资讯数量&nbsp;&nbsp;
+      <span class="ui label circular info-num">0</span>
     </div>
     <div class="ui button mini teal add-btn info-add-btn">添加</div>
-  </div>
-
-  <table class="ui padded table usecase-table">
+  </div>  
+  <table class="ui table" id="infoTable">
     <thead>
       <tr>
         <th>类型</th>
@@ -28,7 +27,6 @@
     </tbody>
   </table>
 </div>
-
 
 <!-- 添加模态框开始 -->
 <div class="ui modal info-add-modal">

@@ -11,8 +11,8 @@
         </td>
         <td>${item.title}</td>
         <td>${item.description}</td>
-        <td>${item.picUrl}</td>
-        <td>${item.url}</td>
+        <td><a href="${item.picUrl}" target="_blank">点击查看</a></td>
+        <td><a href="${item.url}" target="_blank">点击查看</a></td>
         <td>
           {@if item.prioty == 1}
       top

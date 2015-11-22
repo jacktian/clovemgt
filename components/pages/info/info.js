@@ -2,7 +2,7 @@
  * @Author: boxizen
  * @Date:   2015-11-22 15:21:48
  * @Last Modified by:   boxizen
- * @Last Modified time: 2015-11-22 21:02:31
+ * @Last Modified time: 2015-11-22 21:26:44
  */
 
 'use strict';
@@ -36,6 +36,7 @@ $(document).on('click', '.info-add-data', function() {
             var tpl = __inline('msgTpl.tpl'),
                 html = juicer(tpl, data);
             $('#info-list').html(html);
+            $('.info-num').html(data.data.length);
         },
         error: function() {
             console.log("同步API出错。");
@@ -44,8 +45,6 @@ $(document).on('click', '.info-add-data', function() {
 });
 
 function loadMsg() {
-
-    console.log("loadMsg");
 
     $.ajax({
         url: getArticleApi,
@@ -57,6 +56,7 @@ function loadMsg() {
             var tpl = __inline('msgTpl.tpl'),
                 html = juicer(tpl, data);
             $('#info-list').html(html);
+            $('.info-num').html(data.data.length);
         },
         error: function() {
             console.log("loadMsg加载错误");
