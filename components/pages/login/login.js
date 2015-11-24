@@ -2,7 +2,7 @@
  * @Author: boxizen
  * @Date:   2015-11-22 23:20:18
  * @Last Modified by:   boxizen
- * @Last Modified time: 2015-11-24 13:58:44
+ * @Last Modified time: 2015-11-24 14:17:22
  */
 
 var verName = "root",
@@ -11,6 +11,8 @@ var verName = "root",
 // 注销按钮
 $(document).on('click', '#loginReset', function() {
     localStorage.clear();
+    $('#loginMenu').html('登陆');
+    alert("注销成功");
 });
 
 
@@ -29,7 +31,10 @@ $(document).on('click', '#loginSubmit', function() {
 });
 
 var verify = function() {
-    $('#loginSubmit').trigger('click');
+    if (localStorage.name && localStorage.password && localStorage.name == "root" && localStorage.password == "clove1234");
+    else {
+        localStorage.clear();
+    }
 }
 exports.verify = verify;
 
