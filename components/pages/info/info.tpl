@@ -38,8 +38,14 @@
   <div class="image content">
     <form class="ui form">
       <div class="field">
-        <label>类型</label>
+        <label>类型</label><!-- 
         <input type="text" id='postType' placeholder="1表示实用资讯，2表示博士观点">
+ -->
+        <select name="skills" class="ui fluid dropdown" id='postType'>
+  <option value="1">实用资讯</option>
+<option value="2">博士观点</option>
+</select>
+
       </div>
       <div class="field">
         <label>标题</label>
@@ -59,8 +65,14 @@
       </div>
       <div class="field">
         <label>优先级</label>
-        <input type="text" id='prioty' placeholder="1表示最高优先级，2次之，3最低优先级">
+        <select name="skills" class="ui fluid dropdown" id='prioty'>
+  <option value="1">高</option>
+<option value="2">中</option>
+<option value="3">低</option>
+</select>
+
       </div>
+
     </form>
   </div>
   <div class="actions">
